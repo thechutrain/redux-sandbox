@@ -2,8 +2,7 @@ import { UPDATE_NAME, ADD_MONEY, SUB_MONEY } from '../actions/userActions'
 
 const initState = {
 	username: '',
-	totalMoney: 0,
-	age: null
+	totalMoney: 0
 }
 
 const userReducer = (state = initState, action) => {
