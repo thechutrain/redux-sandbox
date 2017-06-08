@@ -1,6 +1,6 @@
 import store from './store'
 // import { updateName, addMoney, subMoney } from './actions/userActions'
-import { addItemCart, clearCart } from './actions/shopActions'
+import { addItemCart, clearCart, removeItemCart } from './actions/shopActions'
 
 // Event listener on any changes to the store
 store.subscribe(() => {
@@ -13,5 +13,7 @@ store.subscribe(() => {
 // store.dispatch(addMoney(3))
 // store.dispatch(subMoney(25))
 store.dispatch(addItemCart('oranges'))
-store.dispatch(addItemCart('oranges'))
-store.dispatch(clearCart())
+store.dispatch(addItemCart('oranges', 5))
+// store.dispatch(clearCart())
+store.dispatch(removeItemCart('oranges'))
+store.dispatch(removeItemCart('oranges', 7))
